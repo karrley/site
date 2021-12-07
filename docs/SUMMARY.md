@@ -1,3 +1,3 @@
-* [shadowsocks](README.md)
-* [nginx](README.md)
+* [shadowsocks](/shadowsocks/README.md)
+* [nginx](/nginx/nginx.md)
 
