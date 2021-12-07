@@ -27,10 +27,15 @@
         auto2top: true,
         maxLevel: 3,
         subMaxLevel: 3,
+        mergeNavbar: true,
         loadSidebar: true,
-        loadSidebar: 'SUMMARY.md',
         //自动显示标题
         autoHeader: true,
+        alias: {
+            '/.*/SUMMARY.md': 'https://cdn.jsdelivr.net/gh/looly/hutool-site/docs/SUMMARY.md',
+        },
+        basePath: 'https://cdn.jsdelivr.net/gh/karrley/site/docs/',
+        loadSidebar: 'SUMMARY.md',
         // PLUGINS
         // ----------------------------------------------------------------
         search: {
