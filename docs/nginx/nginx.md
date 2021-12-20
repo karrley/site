@@ -18,15 +18,7 @@ wget -c https://nginx.org/download/nginx-1.19.10.tar.gz
 apt-get install gcc
 ```
 
-**2. 安装PCRE pcre-devel**
-
-Nginx的Rewrite模块和HTTP核心模块会使用到PCRE正则表达式语法。这里需要安装两个安装包pcre和pcre-devel。第一个安装包提供编译版本的库，而第二个提供开发阶段的头文件和编译项目的源代码。安装指令如下：
-
-```shell
-yum install gcc-c++
-```
-
-**3.安装zlib**
+**2.安装zlib**
 
 zlib库提供了开发人员的压缩算法，在Nginx的各种模块中需要使用gzip压缩。安装指令如下:
 
@@ -35,7 +27,7 @@ apt-get install libpcre3 libpcre3-dev
 apt-get install zlib1g zlib1g-dev
 ```
 
-**4.安装Open SSL**
+**3.安装Open SSL**
 
 nginx不仅支持 http协议，还支持 https（即在 ssl 协议上传输 http），如果使用了 https，需要安装 OpenSSL 库。安装指令如下：
 
