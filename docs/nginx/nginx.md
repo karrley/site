@@ -7,7 +7,7 @@
 > 也可以直接使用wget命令下载，指令如下所示（请根据自己的需求进行下载）：
 
 ```shell
-wget -c https://nginx.org/download/nginx-1.10.1.tar.gz
+wget -c https://nginx.org/download/nginx-1.19.10.tar.gz
 ```
 
 ## 安装
@@ -15,7 +15,7 @@ wget -c https://nginx.org/download/nginx-1.10.1.tar.gz
 安装 nginx 需要先将官网下载的源码进行编译，编译依赖 gcc 环境。安装指令如下：
 
 ```shell
-yum install gcc-c++
+apt-get install gcc
 ```
 
 **2. 安装PCRE pcre-devel**
@@ -31,7 +31,8 @@ yum install gcc-c++
 zlib库提供了开发人员的压缩算法，在Nginx的各种模块中需要使用gzip压缩。安装指令如下:
 
 ```shell
-yum install -y zlib zlib-devel
+apt-get install libpcre3 libpcre3-dev
+apt-get install zlib1g zlib1g-dev
 ```
 
 **4.安装Open SSL**
@@ -39,7 +40,8 @@ yum install -y zlib zlib-devel
 nginx不仅支持 http协议，还支持 https（即在 ssl 协议上传输 http），如果使用了 https，需要安装 OpenSSL 库。安装指令如下：
 
 ```shell
-yum install -y openssl openssl-devel
+sudo apt-get install openssl 
+sudo apt-get install libssl-dev
 ```
 
 ## 配置
