@@ -3,7 +3,7 @@
 ## 下载
 
 > **第一步：下载nginx压缩包**
->在这里可以去nginx官网下载->[点我下载nginx](http://nginx.org/en/download.html)
+> 在这里可以去nginx官网下载->[点我下载nginx](http://nginx.org/en/download.html)
 > 也可以直接使用wget命令下载，指令如下所示（请根据自己的需求进行下载）：
 
 ```shell
@@ -41,7 +41,7 @@ sudo apt-get install libssl-dev
 在“ssserver”所在的路径下，使用touch命令创建一个配置文件：
 
 ```shell
-tar -zxvf nginx-1.10.1.tar.gz
+tar -zxvf nginx-1.19.10.tar.gz
 ```
 
 **额外说明**：如果需要开始https支持，这里请不要直接执行`./configure`，即不要直接执行该脚本，而是在该脚本后面加上SSL模块，请执行如下命令替代 `./confingure` :
@@ -50,15 +50,13 @@ tar -zxvf nginx-1.10.1.tar.gz
 ./configure --with-http_ssl_module
 ```
 
-第四步：编译安装nginx
-这里和redis的编译安装比较类似，首先在当前目录（/usr/local/nginx-1.10.1）进行编译。输入make即可
+第四步：编译安装nginx 这里和redis的编译安装比较类似，首先在当前目录（/usr/local/nginx-1.10.1）进行编译。输入make即可
 
 ```shell
 make
 ```
 
-然后回车，如果编译出错，请检查是否前面的4个安装都没有问题。
-编译成功之后，就可以安装了，输入以下指令：
+然后回车，如果编译出错，请检查是否前面的4个安装都没有问题。 编译成功之后，就可以安装了，输入以下指令：
 
 ```shell
 make install
